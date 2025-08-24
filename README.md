@@ -1,6 +1,6 @@
 # CITEscope
 
-An integrated and user-friendly R package + Shiny app for comprehensive **CITEseq** analysis.
+An integrated and user, friendly R package + Shiny app for comprehensive **CITEseq** analysis.
 
 ## Prerequisites
 **Requires R >= 4.1**
