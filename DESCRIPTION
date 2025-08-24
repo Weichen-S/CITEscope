@@ -1,0 +1,52 @@
+Package: CITEscope
+Type: Package
+Title: An Integrated and User-Friendly R Package for Comprehensive CITE-seq Data Analysis
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Weichen", "Sun",
+      email = "384136614@qq.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: CITEscope is an integrated R package and visualization platform for CITE-seq data analysis, offering a unified workflow that encompasses preprocessing, multimodal integration, annotation, functional scoring, trajectory inference, and interactive visualization.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 4.1.0)
+Imports:
+    shiny,
+    shinythemes,
+    DT,
+    ggplot2,
+    Seurat,
+    patchwork,
+    Matrix,
+    glmGamPoi,
+    SingleR,
+    celldex,
+    msigdbr,
+    dplyr,
+    ggridges,
+    pheatmap,
+    ggpubr,
+    cowplot,
+    monocle3,
+    igraph,
+    princurve,
+    clusterProfiler,
+    org.Mm.eg.db,
+    AnnotationDbi,
+    future,
+    promises,
+    viridis,
+    tibble,
+    SummarizedExperiment,
+    mgcv,
+    rlang
+Suggests:
+    SeuratWrappers,
+    knitr,
+    rmarkdown
+Config/Needs/website: r-lib/pkgdown
