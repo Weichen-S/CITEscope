@@ -63,7 +63,6 @@ A Seurat object containing RNA + ADT assays; metadata preview table (first 10 ro
 
 
 ## WNN Clustering
----
 **Functions:** 
 
 Run PCA on RNA (SCT) and ADT, build WNN graph, UMAP reduction, Louvain clustering.
@@ -76,7 +75,6 @@ SCT.weight and ADT.weight FeaturePlots
 
 
 ## Automatic Cell Type Annotation
----
 Automated annotation via SingleR (Aran et al., 2019).
 
 **Reference datasets** (from celldex):
@@ -88,9 +86,11 @@ Automated annotation via SingleR (Aran et al., 2019).
 
 Marker support: Predefined immune marker panel (e.g., CD3, CD4, CD8, CD19, CD14, NCAM1, EPCAM).
 
-provided： Core marker presence/absence table + full searchable gene list.
+**provided：** 
 
-**Output plots:**
+Core marker presence/absence table + full searchable gene list.
+
+**Output:**
 SingleR-labeled UMAP.
 
 ADT marker UMAP 
@@ -103,4 +103,81 @@ violin plots.
 
 
 ## Infection Status Classification
----
+Based on NP-ADT signal.
+
+Thresholding NP expression to assign infected vs bystander cells.
+
+**Output :**
+
+Violin plot: NP-ADT distribution.
+
+Bar plot: Proportions of infected vs bystander.
+
+UMAP colored by infection status
+## Functional Module Scoring
+**Built-in gene sets:**
+
+1. Hallmark IFN-α + IFN-γ (MSigDB H).
+
+2. MSigDB C7 Interferon sets.
+
+3. Cross-species Core ISGs (human, mouse, cow, sheep).
+
+4. PRR signaling (DDX58, IFIH1, MAVS, TBK1, IRF3, IRF7).
+
+**Additional modules:**
+
+1. Exhaustion (MSigDB C7 “exhaust” sets).
+
+2. Cytokine/Inflammatory Response (MSigDB H “inflammatory response”).
+
+**Custom:** User-uploaded CSV (first column = gene list).
+
+**Output:**
+
+UMAP plots for ISG, Exhaustion, Cytokine modules.
+
+Combined UMAP (three modules merged).
+
+DotPlot (Group × Module scores).
+
+Heatmap (group mean scores).
+
+RidgePlot (distribution across groups).
+
+Pseudobulk Bar plot (mean ± SEM).
+
+Scatter correlation: ISG_Score vs NP-ADT 
+
+## Trajectory Inference & Graph Learning
+Root selection:
+
+Manual cluster, or
+
+ADT-based (select cluster with highest quantile of NP-ADT).
+
+ADT integration:
+
+ADT markers projected on trajectory UMAP.
+
+ADT vs pseudotime smooth curve fitting.
+
+**Output:**
+
+UMAP + learned trajectory graph (pseudotime).
+
+UMAP colored by ADT marker.
+
+ADT vs pseudotime smoothed curve.
+
+
+## Differential Expression & Pathway Enrichment
+**Output:**
+
+MA plot
+
+Volcano plot
+
+Heatmap of top 10 DEGs
+
+GO/KEGG enrichment plots (dot/bar)
