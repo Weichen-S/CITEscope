@@ -38,3 +38,13 @@ CITEscope::run_app()
 CITEscope is an integrated R package and visualization platform designed for comprehensive CITE-seq data analysis. It streamlines preprocessing, multimodal integration, annotation, Infection Status Classification,functional module scoring, trajectory inference, and downstream interpretation within a unified workflow. With its interactive visualization interface, CITEscope enables users to intuitively explore complex single-cell multi-omics datasets.
 <img width="838" height="472" alt="new" src="https://github.com/user-attachments/assets/0dc7d4f4-a528-4931-8598-750c477fa1ac" />
 
+# Workflow
+---
+## Data Preprocessing & Quality Control
+Input: 10x Genomics outputs (ZIP of matrix.mtx, features.tsv, barcodes.tsv) or uploaded TSV.
+Processing steps:
+1.Split RNA and ADT modalities (based on feature type).
+2.RNA normalization: SCTransform (method = "glmGamPoi", min.cells = 3, min.features = 200).
+3.ADT normalization: CLR + ScaleData.
+4.Identify variable features for RNA and ADT.
+Output: A Seurat object containing RNA + ADT assays; metadata preview table (first 10 rows).
