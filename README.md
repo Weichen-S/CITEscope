@@ -41,9 +41,13 @@ CITEscope is an integrated R package and visualization platform designed for com
 # Workflow
 ---
 ## Data Preprocessing & Quality Control
-Input: 10x Genomics outputs (ZIP of matrix.mtx, features.tsv, barcodes.tsv) or uploaded TSV.
+**Input:** 
 
-Processing steps:
+10x Genomics outputs (ZIP of matrix.mtx, features.tsv, barcodes.tsv) or uploaded TSV.
+
+ADT Requirements: The recommended data should include ADT (antibody tag) for the use of multimodal analysis.
+
+**Processing steps:**
 
 1.Split RNA and ADT modalities (based on feature type).
 
@@ -53,4 +57,50 @@ Processing steps:
 
 4.Identify variable features for RNA and ADT.
 
-Output: A Seurat object containing RNA + ADT assays; metadata preview table (first 10 rows).
+**Output:** 
+
+A Seurat object containing RNA + ADT assays; metadata preview table (first 10 rows).
+
+
+## WNN Clustering
+---
+**Functions:** 
+
+Run PCA on RNA (SCT) and ADT, build WNN graph, UMAP reduction, Louvain clustering.
+
+**Output:**
+
+WNN UMAP + clusters
+
+SCT.weight and ADT.weight FeaturePlots
+
+
+## Automatic Cell Type Annotation
+---
+Automated annotation via SingleR (Aran et al., 2019).
+
+**Reference datasets** (from celldex):
+
+1. Human: HumanPrimaryCellAtlasData
+
+2. Mouse: MouseRNAseqData
+
+
+Marker support: Predefined immune marker panel (e.g., CD3, CD4, CD8, CD19, CD14, NCAM1, EPCAM).
+
+provided： Core marker presence/absence table + full searchable gene list.
+
+**Output plots:**
+SingleR-labeled UMAP.
+
+ADT marker UMAP 
+
+SCT top variable feature UMAP.
+
+Custom marker UMAP
+
+violin plots.
+
+
+## Infection Status Classification
+---
