@@ -117,7 +117,7 @@ Violin plot: NP-ADT distribution.
 Bar plot: Proportions of infected vs bystander.
 
 UMAP colored by infection status
-![Uploading Infection_Status_UMAP.png…]()
+![29fb2d541f592ad98423ada41e71c648](https://github.com/user-attachments/assets/05f25bf0-0a57-4086-8e61-c9ceedb0d636)
 
 
 
@@ -155,7 +155,7 @@ RidgePlot (distribution across groups).
 Pseudobulk Bar plot (mean ± SEM).
 
 Scatter correlation: ISG_Score vs NP-ADT 
-<img width="2400" height="1800" alt="ISG_NP_Correlation" src="https://github.com/user-attachments/assets/b3c16453-42ce-4ade-a1d5-ec2c7240b836" />
+![Uploading b6e7c3b84fef5d2b8a15503693aa7f94.png…]()
 
 
 ## Trajectory Inference & Graph Learning
