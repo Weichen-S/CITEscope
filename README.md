@@ -117,7 +117,8 @@ Violin plot: NP-ADT distribution.
 Bar plot: Proportions of infected vs bystander.
 
 UMAP colored by infection status
-<img width="1740" height="965" alt="30853ac71285cba9551cec682af33956" src="https://github.com/user-attachments/assets/6609dfe1-3306-473b-8030-a5c415c6815a" />
+![Uploading Infection_Status_UMAP.png…]()
+
 
 ## Functional Module Scoring
 **Built-in gene sets:**
