@@ -60,6 +60,7 @@ ADT Requirements: The recommended data should include ADT (antibody tag) for the
 **Output:** 
 
 A Seurat object containing RNA + ADT assays; metadata preview table (first 10 rows).
+![dde5f264d960bdc2705dcad9c49a7075](https://github.com/user-attachments/assets/b926a23b-8cb6-4069-971a-8f76473f1454)
 
 
 ## WNN Clustering
@@ -72,6 +73,7 @@ Run PCA on RNA (SCT) and ADT, build WNN graph, UMAP reduction, Louvain clusterin
 WNN UMAP + clusters
 
 SCT.weight and ADT.weight FeaturePlots
+<img width="1917" height="1027" alt="bdc28ca559c7973359a7dc810170e067" src="https://github.com/user-attachments/assets/0a19bfaf-d447-4589-b370-7031e288a6dd" />
 
 
 ## Automatic Cell Type Annotation
@@ -100,6 +102,7 @@ SCT top variable feature UMAP.
 Custom marker UMAP
 
 violin plots.
+<img width="1740" height="965" alt="30853ac71285cba9551cec682af33956" src="https://github.com/user-attachments/assets/f2c5fa44-ec44-4aea-bcbc-3eee5065ccc6" />
 
 
 ## Infection Status Classification
@@ -114,6 +117,8 @@ Violin plot: NP-ADT distribution.
 Bar plot: Proportions of infected vs bystander.
 
 UMAP colored by infection status
+<img width="1740" height="965" alt="30853ac71285cba9551cec682af33956" src="https://github.com/user-attachments/assets/6609dfe1-3306-473b-8030-a5c415c6815a" />
+
 ## Functional Module Scoring
 **Built-in gene sets:**
 
@@ -148,6 +153,8 @@ RidgePlot (distribution across groups).
 Pseudobulk Bar plot (mean ± SEM).
 
 Scatter correlation: ISG_Score vs NP-ADT 
+<img width="2400" height="1800" alt="ISG_NP_Correlation" src="https://github.com/user-attachments/assets/b3c16453-42ce-4ade-a1d5-ec2c7240b836" />
+
 
 ## Trajectory Inference & Graph Learning
 Root selection:
@@ -169,6 +176,9 @@ UMAP + learned trajectory graph (pseudotime).
 UMAP colored by ADT marker.
 
 ADT vs pseudotime smoothed curve.
+![8c4f3695855a5378d4f8a11cf1ba4e06](https://github.com/user-attachments/assets/76f1e7e4-069d-49f5-ac52-f354c5a90c26)
+
+<img width="2100" height="1800" alt="ADT_vs_Pseudotime" src="https://github.com/user-attachments/assets/abeabd2a-dd44-4537-a5e1-cc623f6b6a36" />
 
 
 ## Differential Expression & Pathway Enrichment
