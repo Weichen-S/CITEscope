@@ -155,7 +155,8 @@ RidgePlot (distribution across groups).
 Pseudobulk Bar plot (mean ± SEM).
 
 Scatter correlation: ISG_Score vs NP-ADT 
-![Uploading b6e7c3b84fef5d2b8a15503693aa7f94.png…]()
+![Uploading 3929067fe14fb3897152ae50b4d20f01.jpg…]()
+
 
 
 ## Trajectory Inference & Graph Learning
