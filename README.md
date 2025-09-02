@@ -22,7 +22,7 @@ devtools::install_github("Weichen-S/CITEscope")
 ## Bioconductor dependencies(if missing)
 ```r
 install.packages("BiocManager")
-BiocManager::install(c("SingleR", "celldex", "org.Mm.eg.db"))
+BiocManager::install(c("SingleR", "celldex", "org.Mm.eg.db", "clusterProfiler", "AnnotationDbi", "SummarizedExperiment", "monocle3"))
 ```
 ## For Seurat → Monocle3 conversion (optional)
 ```r
