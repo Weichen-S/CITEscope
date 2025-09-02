@@ -186,6 +186,7 @@ ADT vs pseudotime smoothed curve.
 
 ## Differential Expression & Pathway Enrichment
 **Output:**
+Top 10 DEGs table
 
 MA plot
 
@@ -194,3 +195,8 @@ Volcano plot
 Heatmap of top 10 DEGs
 
 GO/KEGG enrichment plots (dot/bar)
+<img width="1920" height="1018" alt="DE" src="https://github.com/user-attachments/assets/9ca5501c-f26f-4949-8629-f08beef0939e" />
+![Uploading DE_Enrichment.png…]()
+
+
+
